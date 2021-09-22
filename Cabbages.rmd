@@ -58,12 +58,16 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```
 
 
+Box plot shows the VitC is more for c52 than c39. The VitC level for c52 is around 70 and c39 is around 55.
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 ```{r}
 favstats(VitC~Cult,data=veggy)
 ```
+
+The table shows that c39 is an average of 51.5 and the c52 is an average 64.4 of the vitamin C content.
 
 ## Inferential Results
 
@@ -73,9 +77,11 @@ favstats(VitC~Cult,data=veggy)
 ```{r}
 t.test(VitC~Cult,data=veggy)
 ```
-The p-value is 0.00000003405
+The p-value is 0.00000003405 this is a very small number. What this represents is the odds of getting a sample like the one we just examined if the null hypothesis is TRUE. I reject the hypothesis.
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+My conclusion is that the relationship between c52 and c39 is the c52 has more VitC content and that c39 has less.
